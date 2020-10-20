@@ -4,12 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Avatar extends Model
+class Post extends Model
 {
-    public $timestamps = false;
-    
     protected $fillable = [
-        'telefono', 'avatar', 'user_id'
+        'title', 'body', 'user_id',
     ];
 
     public function user()
